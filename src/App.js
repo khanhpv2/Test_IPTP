@@ -14,16 +14,19 @@ import Header from './Components/Header';
 // export const history = createBrowserHistory();
 function App() {
   return (
-    <BrowserRouter >
+    <>
+
       <Header />
+      
       <Switch>
-         <Route exact path={"/detail/:id"}  component={Detail} />
-         <Route exact path={'/footer'}  component={Footer} />
-         <Route exact path={'/groupid'}  component={GroupID} />
-         <Route exact path={'/'}  component={Home} />
+         <Route path="/detail/:id"  component={Detail} />
+         <Route  path='/footer'  component={Footer} />
+         <Route  path='/groupid'  component={GroupID} />
+         <Route  path='/'  component={Home} />
       </Switch>
+     
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 

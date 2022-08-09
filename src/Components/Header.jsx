@@ -7,7 +7,7 @@ export default function Header() {
         <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="relative flex grid items-center grid-cols-2 lg:grid-cols-3">
             <ul className="flex items-center hidden space-x-8 lg:flex">
-              <li><a href="/" aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Product</a></li>
+              <li><a href="/" aria-label="Our product" title="Our product" className=" font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Product</a></li>
               <li><a href="/" aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Features</a></li>
               <li><a href="/" aria-label="Product pricing" title="Product pricing" className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Pricing</a></li>
             </ul>
@@ -53,9 +53,9 @@ export default function Header() {
                       <li><a href="/" aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Product</a></li>
                       <li><a href="/" aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Features</a></li>
                       <li><a href="/" aria-label="Product pricing" title="Product pricing" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Pricing</a></li>
-                      <li><a href="/" aria-label="Sign in" title="Sign in" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Sign in</a></li>
+                      <li ><a href="/"  aria-label="Sign in" title="Sign in" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Sign in</a></li>
                       <li>
-                        <a href="/" className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none" aria-label="Sign up" title="Sign up">
+                        <a href="/" style={{boxShadow:'none'}} >
                           Sign up
                         </a>
                       </li>
