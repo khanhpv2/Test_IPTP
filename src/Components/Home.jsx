@@ -7,7 +7,7 @@ import GroupID from './GroupID'
 
 export default function Home(props) {
     const [data, setData] = useState([])
-    // console.log(data)
+   
     const getAllDataApi = async () => {
         try {
             let result = await http.get('/todos')
@@ -24,7 +24,7 @@ export default function Home(props) {
     }
 
     const [toggleId, setToggleId] = useState(false)
-    console.log(toggleId);
+    // console.log(toggleId);
     const [toggleTitle, setToggleTitle] = useState(false)
 
 
@@ -46,7 +46,9 @@ export default function Home(props) {
         const dataSort = [...data]
         if (toggleTitle) {
             setData(sortAZ(dataSort))
-        } 
+        } else {
+            getAllDataApi()
+        }
     }, [toggleTitle])
 
 
